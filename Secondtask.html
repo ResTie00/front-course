@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body style="background-color: #f0f0f0; font-family: Arial, sans-serif; display: flex; justify-content: center; flex-direction: column; align-items: center; height: 100vh;">
+    <header>
+        <h1>Registration Form</h1>
+    </header>
+    <main>
+        <form action="submit_registration.php" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <label for ="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select a country</option>
+                <option value="us">United States</option>
+                <option value="ca">Canada</option>
+                <option value="uk">United Kingdom</option>
+            </select><br><br> 
+
+            <label for="I agree to the">I agree to the <a href="terms.html" target="_blank">Terms and Conditions</a>:</label>
+            <input type="checkbox" id="terms" name="terms" required><br><br>
+            <label for="submit"></label>
+            <input type="submit" value="Register">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2026 Registration Page. All rights reserved.</p>
+    </footer>
+</body>
+</html>
